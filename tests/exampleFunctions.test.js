@@ -1,4 +1,4 @@
-const {getTotalLikes, getMostPopularBlog} = require("exampleFunctions")
+const {getTotalLikes, getMostPopularBlog} = require("../exampleFunctions.js")
 
 const user = {
     username: "user1",
@@ -17,18 +17,18 @@ const user = {
 }
 
 describe('getTotalLikes', () => {
-    test('should return the total likes of a user'), () => {
+    test('should return the total likes of a user', () => {
         expect( getTotalLikes(user) ).toBe(230)
-    }
+    })
 })
 
 describe('getMostPopularBlog', () => {
-    test('should return the most popular blog of a user'), () => {
+    test('should return the most popular blog of a user', () => {
         const output = {
             title: 'Entry 1',
             likes: 130,
             content: 'Blog 1 content...'
         }
         expect( getMostPopularBlog(user) ).toEqual(output)
-    }
+    })
 })
