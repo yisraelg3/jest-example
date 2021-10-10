@@ -1,0 +1,1 @@
+const {getTotalLikes, getMostPopularBlog} = require("exampleFunctions")
